@@ -21,6 +21,8 @@ export default {
     },
 }
 </script>
-<style lang="">
-    
+<style>
+    div {
+        justify-content: space-between;
+    }
 </style>

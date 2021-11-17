@@ -31,5 +31,7 @@ export default {
   width: 300px;
   height: 600px;
   margin:  0 auto;
+  align-items: center;
+  justify-content: center;
 }
 </style>

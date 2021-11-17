@@ -8,7 +8,7 @@
                 {{item.title}}
                 </div>
                 <div>
-                <button>삭제</button>
+                <button @click="deleted(item.id)">삭제</button>
                 </div>
             </li>
         </ul>
@@ -25,6 +25,9 @@ export default {
     methods: {
         done : function(id) {
             this.$store.commit("checkToggle", id)
+        },
+        deleted : function(id) {
+            this.$store.commit("delete",id)
         }
     },
 }

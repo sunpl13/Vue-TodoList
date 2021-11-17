@@ -33,6 +33,10 @@ state.todolist = state.todolist.map((item) => ({
   checked : item.id === id ? !item.checked : item.checked
 }))
 console.log(state.todolist);
+  },
+
+  allDelete(state) {
+    state.todolist = []
   }
 }
 })

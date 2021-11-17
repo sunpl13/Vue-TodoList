@@ -8,6 +8,8 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style>
+    h1 {
+        text-align: center;
+    }
 </style>

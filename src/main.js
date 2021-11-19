@@ -10,23 +10,24 @@ const store = new Vuex.Store({
     id:0
   },
 mutations: {
+  //리스트 생성
   add(state, todo) {
     state.todolist.push({title: todo, id: state.id, checked : false})
     state.id++
     console.log(state.todolist);
   },
-
+  //리스트 삭제
   delete(state, id) {
     state.todolist = state.todolist.filter((item) => item.id !== id)
   },
-
+  //리스트 수정
   update(state, id, newTitle) {
     state.todolist = state.todolist.map((item) => ({
       ...item,
       title : item.id === id ? newTitle : item.title
     }))
   },
-
+  //완료 토글
   checkToggle(state, id) {
 state.todolist = state.todolist.map((item) => ({
   ...item,
